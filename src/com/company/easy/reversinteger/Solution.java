@@ -32,15 +32,16 @@ public class Solution {
 
   public static int reverse(int x) {
     int MAX_POSSIBLE_REVERSE_NUM = 2147483412;
-    if(x > MAX_POSSIBLE_REVERSE_NUM){
+    if (x > MAX_POSSIBLE_REVERSE_NUM) {
       return 0;
     }
     int temp = x;
     int result = temp % 10;
     temp = temp / 10;
     while (temp != 0) {
-      if(Math.abs(result) > Integer.MAX_VALUE / 10)
+      if (Math.abs(result) > Integer.MAX_VALUE / 10) {
         return 0;
+      }
       result = (result * 10) + (temp % 10);
       temp = temp / 10;
     }
