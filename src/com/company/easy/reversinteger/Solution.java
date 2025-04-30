@@ -35,6 +35,7 @@ public class Solution {
     if (x > MAX_POSSIBLE_REVERSE_NUM) {
       return 0;
     }
+    Thread thread = new Thread();
     int temp = x;
     int result = temp % 10;
     temp = temp / 10;

@@ -1,10 +1,5 @@
 package com.company.easy.smalestnumocurearray;
 
-import java.util.Arrays;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
 public class Solution {
   public static String solution(String message, int K) {
     String [] splitedString = message.split(" ");
