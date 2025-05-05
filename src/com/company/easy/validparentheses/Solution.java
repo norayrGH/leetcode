@@ -16,7 +16,7 @@ class Solution {
     }
   };
 
-  public boolean isValid(String s) {
+  public static boolean isValid(String s) {
     Stack<Character> characters = new Stack<>();
     characters.push(s.charAt(0));
     for (int i = 1; i < s.length(); i++) {
@@ -31,4 +31,8 @@ class Solution {
     return characters.isEmpty();
   }
 
+
+  public static void main(String[] args) {
+    System.out.print( isValid("[{]}{}"));
+  }
 }
